@@ -1,7 +1,7 @@
 {
   "name": "promised-messages",
-  "version": "1.0.0",
   "description": "Wraps a message bus, like postMessage, with a promise interface and a way to wait for a response.",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -9,7 +9,6 @@
     "test:watch": "jest --watch"
   },
   "keywords": [],
-  "author": "",
   "devDependencies": {
     "@types/jest": "^29.5.3",
     "@types/uniqid": "^5.3.2",
@@ -27,5 +26,6 @@
   ],
   "dependencies": {
     "uniqid": "^5.4.0"
-  }
+  },
+  "author": "Yuri Tkachenko"
 }
