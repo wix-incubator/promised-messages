@@ -1,4 +1,5 @@
-import {idPrefix} from './consts'
+import uniqid from 'uniqid'
+
 import {Messenger, Response, Request, Source} from './types'
 import {isRequest, isResponse} from './utils'
 
@@ -9,7 +10,6 @@ export class PromisedMessages {
   private queue: Request[] = []
 
   private isReady = false
-  private counter = 0
 
   constructor(
     private messenger: Messenger,
@@ -42,7 +42,7 @@ export class PromisedMessages {
       callbacks.forEach(callback => {
         const payload = callback(incoming)
         const res: Response<unknown> = {
-          id: `${idPrefix}${this.counter++}`,
+          id: uniqid(),
           source: this.source,
           type: 'response',
           requestId: incoming.id,
@@ -58,7 +58,7 @@ export class PromisedMessages {
     action: string,
     payload?: unknown
   ): Promise<Response<P>> {
-    const id = `${idPrefix}${this.counter++}`
+    const id = uniqid()
     const message: Request = {
       action,
       payload,
