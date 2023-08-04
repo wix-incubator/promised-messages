@@ -6,6 +6,7 @@
     "strict": true,
     "esModuleInterop": true,
     "sourceMap": true,
+    "declaration": true,
     "outDir": "dist"
   },
   "include": ["src"],
