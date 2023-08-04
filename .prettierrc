@@ -1,0 +1,9 @@
+{
+  "editorconfig": true,
+  "semi": false,
+  "singleQuote": true,
+  "bracketSpacing": false,
+  "arrowParens": "avoid",
+  "singleAttributePerLine": true,
+  "printWidth": 80
+}
