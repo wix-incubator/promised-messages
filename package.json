@@ -27,5 +27,6 @@
   "dependencies": {
     "uniqid": "^5.4.0"
   },
-  "author": "Yuri Tkachenko"
+  "author": "Yuri Tkachenko",
+  "license": "MIT"
 }
