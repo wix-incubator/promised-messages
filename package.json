@@ -3,6 +3,11 @@
   "description": "Wraps a message bus, like postMessage, with a promise interface and a way to wait for a response.",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wix-incubator/promised-messages.git"
+  },
+  "homepage": "https://github.com/wix-incubator/promised-messages#readme",
   "scripts": {
     "build": "tsc",
     "test": "jest",
